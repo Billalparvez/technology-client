@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "Smartphone X",
+        "brandName": "Google",
+        "brandImage": "https://i.postimg.cc/sxsfbG2t/google-plus-icon-line-connection-circuit-board.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Laptop Pro",
+        "brandName": "Apple",
+        "brandImage": "https://i.postimg.cc/DzpYt9wF/elegant-smartphone-composition.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Wireless Headphones",
+        "brandName": "Oppo",
+        "brandImage": "https://i.postimg.cc/DzpYt9wF/elegant-smartphone-composition.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Tablet Mini",
+        "brandName": "Xiaomi",
+        "brandImage": "https://i.postimg.cc/DzpYt9wF/elegant-smartphone-composition.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Gaming Console X",
+        "brandName": "Samsung",
+        "brandImage": "https://i.postimg.cc/DzpYt9wF/elegant-smartphone-composition.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Smartwatch Pro",
+        "brandName": "Oneples",
+        "brandImage": "https://i.postimg.cc/DzpYt9wF/elegant-smartphone-composition.jpg"
+    }
+]

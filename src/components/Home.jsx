@@ -1,10 +1,14 @@
+import Bannar from "./Bannar";
+import Category from "./Category";
 import Footer from "./Footer";
 
 
 const Home = () => {
     return (
         <div>
-        <Footer></Footer>
+            <Bannar></Bannar>
+            <Category></Category>
+            <Footer></Footer>
         </div>
     );
 };
