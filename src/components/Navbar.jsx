@@ -1,12 +1,16 @@
+import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { AuthContext } from "../Provider/AuthProvider";
 
 
 const Navbar = () => {
+    const { user } = useState(AuthContext)
     const links = <>
-        <NavLink className="mr-5" to={'/'}>Home</NavLink>
-        <NavLink className="mr-5" to={'/addProduct'}>Add Product</NavLink>
-        <NavLink className="mr-5" to={'/myCart'}>My Cart</NavLink>
+        <li> <NavLink className="mr-5" to={'/'}>Home</NavLink></li>
+        <li> <NavLink className="mr-5" to={'/addProduct'}>Add Product</NavLink></li>
+        <li><NavLink className="mr-5" to={'/myCart'}>My Cart</NavLink></li>
     </>
+
     return (
         <div className="navbar bg-base-100 max-w-7xl mx-auto p-5">
             <div className="navbar-start">
@@ -16,21 +20,37 @@ const Navbar = () => {
                             stroke="currentColor"><path strokeLinecap="round"
                                 strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </label>
-                    <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                     {links}
+                    <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 ">
+                        {links}
                     </ul>
                 </div>
                 <img className="w-12 h-12 rounded-full" src="https://i.postimg.cc/MGN0F8LB/istockphoto-1144557228-1024x1024.jpg" alt="" />
                 <a className="btn btn-ghost normal-case text-xl">Technology</a>
             </div>
             <div className="navbar-center hidden lg:flex">
-                <ul className="menu menu-horizontal px-1">
-                   {links}
+                <ul className="menu menu-horizontal px-1 ">
+                    {links}
                 </ul>
             </div>
             <div className="navbar-end ">
                 <Link className="btn" to={'/login'}>Login</Link>
+                {
+                     user ? <>
+                     <p>{user.email}</p>
+                 </> : ""
+                }
             </div>
+
+            {
+                // user ? <>
+                //     <p>{user.displayName}</p>
+                //     <p className="ml-3">{user.photoURL}</p>
+                //     {/* <p>{user.email}</p> */}
+                //     <a onClick={handleSingIn} className="btn">SingOUt</a>
+                // </>
+                //     : ""
+               
+            }
         </div>
     );
 };

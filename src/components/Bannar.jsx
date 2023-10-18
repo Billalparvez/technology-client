@@ -3,7 +3,7 @@
 const Bannar = () => {
     return (
         <div>
-            <div className="hero h-[650px] w-full" style={{ backgroundImage: 'url(https://daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.jpg)' }}>
+            <div className="hero h-[650px] w-full" style={{ backgroundImage: 'url(https://i.postimg.cc/DzpYt9wF/elegant-smartphone-composition.jpg)' }}>
                 <div className="hero-overlay bg-opacity-60"></div>
                 <div className="hero-content text-center text-neutral-content">
                     <div className="">
