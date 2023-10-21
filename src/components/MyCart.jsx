@@ -46,11 +46,11 @@ const MyCart = () => {
                         <figure><img className="h-64 w-full rounded-xl" src={b.brandPhoto} alt="Shoes" /></figure>
                         <div className="card-body ">
                             <div className="px-4">
-                                <h2 className="card-title text-2xl">{b.brandName}!</h2>
+                                <h2 className="card-title text-2xl">Brand: {b.brandName}!</h2>
 
                             </div>
                             <div className="card-actions justify-end">
-                                <button onClick={() => handleDelete(b._id)} className="btn btn-primary">Delete</button>
+                                <button onClick={() => handleDelete(b._id)} className="btn bg-sky-500 text-white">Delete</button>
 
                             </div>
                         </div>

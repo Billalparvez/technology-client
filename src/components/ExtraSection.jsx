@@ -36,23 +36,23 @@ const ExtraSection = () => {
                     <h1 className='text-3xl'>EXPLORE THE MOST POPULAR SERVICES</h1>
                     <button className='btn px-9 bg-sky-500 text-white font-bold hover:bg-sky-700'>All Service</button>
                 </div>
-                <Marquee>
+                <Marquee pauseOnHover>
                     <div className='flex gap-10  mt-10'>
                         <div className="card w-96 md:h-[500px]  bg-base-100 shadow-xl">
                             <figure><img className='' src="https://i.postimg.cc/C1MNj4JV/3-4-1.jpg" alt="Shoes" /></figure>
                             <div className="card-body">
-                                <h2 className="card-title">
-                                    Best in Class Support!
+                                <h2 className="card-title border-l-2 border-info">
+                                    <span className='ml-4'> Best in Class Support!</span>
                                     <div className="badge badge-secondary">NEW</div>
                                 </h2>
-                                <p>If a dog chews shoes whose shoes  a dog chews shoes whose shoes If a dog chews shoes whose shoes do If a dog chews shoes whose shoes does does he choose?</p>
+                                <p className=' '>If a dog chews shoes whose shoes  a dog chews shoes whose shoes If a dog chews shoes whose shoes do If a dog chews shoes whose shoes does does he choose?</p>
                             </div>
                         </div>
                         <div className="card w-96 md:h-[500px]  bg-base-100 shadow-xl">
                             <figure><img className='' src="https://i.postimg.cc/L6DbwnYD/1-6-1.jpg" alt="Shoes" /></figure>
                             <div className="card-body">
-                                <h2 className="card-title">
-                                    Best in Class Support!
+                                <h2 className="card-title border-l-2 border-info">
+                                    <span className='ml-4'> Best in Class Support!</span>
                                     <div className="badge badge-secondary">NEW</div>
                                 </h2>
                                 <p>If a dog chews shoes whose shoes  a dog chews shoes whose shoes If a dog chews shoes whose shoes do If a dog chews shoes whose shoes does does he choose?</p>
@@ -61,14 +61,14 @@ const ExtraSection = () => {
                         <div className="card w-96 md:h-[500px]  bg-base-100 shadow-xl">
                             <figure><img className='' src="https://i.postimg.cc/Rh9gbBv2/2-5-1.jpg" alt="Shoes" /></figure>
                             <div className="card-body">
-                                <h2 className="card-title">
-                                    Best in Class Support!
+                                <h2 className="card-title border-l-2 border-info">
+                                    <span className='ml-4'> Best in Class Support!</span>
                                     <div className="badge badge-secondary">NEW</div>
                                 </h2>
                                 <p>If a dog chews shoes whose shoes  a dog chews shoes whose shoes If a dog chews shoes whose shoes do If a dog chews shoes whose shoes does does he choose?</p>
                             </div>
                         </div>
-                        
+
                     </div>
                 </Marquee>
             </div>

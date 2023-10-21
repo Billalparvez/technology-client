@@ -1,3 +1,4 @@
+import moment from "moment";
 import { useLoaderData, useParams } from "react-router";
 import Swal from "sweetalert2";
 
@@ -31,18 +32,19 @@ const CardDetails = () => {
             })
     }
     return (
-        <div>
-            <div className="card card-compact  bg-base-100 shadow-xl ">
-                <figure><img className="h-64 w-full rounded-xl" src={data.photo_url} alt="Shoes" /></figure>
-                <div className="card-body ">
+        <div className="max-w-7xl mx-auto">
+            <p className="text-center text-3xl font-bold my-5">{moment().format('MMMM Do YYYY, h:mm:ss a')}</p>
+            <div className="card card-compact  bg-base-100  ">
+                <figure><img className="h-80 w-full rounded-xl" src={data.photo_url} alt="Shoes" /></figure>
+                <div className="card-body">
                     <div className="px-4">
-                        <h2 className="card-title text-2xl">{data.name}!</h2>
+                        <h2 className="card-title text-2xl">Name: {data.name}!</h2>
                         <h2 className="font-bold text-lg">Brand: {data.brand}</h2>
                         <p className="text-4xl font-bold"> <span className="text-info">$ </span>{data.price}</p>
                         <p className="text-2xl">{data.rating}</p>
                     </div>
                     <div className="card-actions justify-end">
-                        <button onClick={() => handleAddCart(data)} className="btn btn-primary">Add to Cart</button>
+                        <button onClick={() => handleAddCart(data)} className="btn bg-sky-500">Add to Cart</button>
 
                     </div>
                 </div>
