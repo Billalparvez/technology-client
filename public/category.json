@@ -9,13 +9,13 @@
         "id": 2,
         "name": "Laptop Pro",
         "brandName": "Apple",
-        "brandImage": "https://i.postimg.cc/DzpYt9wF/elegant-smartphone-composition.jpg"
+        "brandImage": "https://i.postimg.cc/C5JvVmTG/apple-fresh-fruit-glass-container-generative-ai.jpg"
     },
     {
         "id": 3,
         "name": "Wireless Headphones",
         "brandName": "Oppo",
-        "brandImage": "https://i.postimg.cc/DzpYt9wF/elegant-smartphone-composition.jpg"
+        "brandImage": "https://i.postimg.cc/mZmdrL5B/HD-wallpaper-oppo-turquoise-logo-turquoise-brickwall-oppo-logo-brands-oppo-neon-logo-oppo-thumbnail.jpg"
     },
     {
         "id": 4,
@@ -26,13 +26,13 @@
     {
         "id": 5,
         "name": "Gaming Console X",
-        "brandName": "Samsung",
-        "brandImage": "https://i.postimg.cc/DzpYt9wF/elegant-smartphone-composition.jpg"
+        "brandName": "Sony",
+        "brandImage": "https://i.postimg.cc/Xq4T6sqL/gettyimages-1246697303-612x612.jpg"
     },
     {
         "id": 6,
         "name": "Smartwatch Pro",
-        "brandName": "Oneples",
-        "brandImage": "https://i.postimg.cc/DzpYt9wF/elegant-smartphone-composition.jpg"
+        "brandName": "Oneplus",
+        "brandImage": "https://i.postimg.cc/7L1D2GF5/One-Plus-Logo-One-Plus-6-T-840x472-jpg.webp"
     }
 ]

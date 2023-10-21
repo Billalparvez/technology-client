@@ -4,8 +4,8 @@ import { AiFillEyeInvisible, AiFillEye, AiOutlineGoogle, AiFillGithub } from 're
 import toast, { Toaster } from 'react-hot-toast';
 import { useContext, useState } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
+import Swal from "sweetalert2";
 const Login = () => {
-    // const { singInUser, googleUser } = useContext(AuthContext)
     const { singInUser,googleUser } = useContext(AuthContext)
     const [passwordShow, setPasswordShow] = useState(false)
     const [loginError, setLoginError] = useState('')
@@ -29,7 +29,12 @@ const Login = () => {
         singInUser(email, password)
             .then(res => {
                 console.log(res.user)
-                toast.success('Your Login Successfull!')
+                Swal.fire({
+                    title: 'success!',
+                    text: 'Your Login Success!!!',
+                    icon: 'success',
+                    confirmButtonText: 'Cool'
+                })
             })
             .catch(error => {
                 console.log(error)
@@ -79,14 +84,13 @@ const Login = () => {
                         </div>
                         <div className="form-control mt-6">
                             <button className="btn btn-info text-white rounded-3xl">Login
-                                {/* <Link to={"/"}></Link> */}
                             </button>
                             < Toaster />
                         </div>
                         <div className='text-center'>
                             <p className='font-bold'>or Sing In with</p>
                             <div className='flex justify-center mt-3 gap-4'>
-                                <button onClick={handleGoogle} className='border p-5 rounded-2xl text-2xl' ><AiOutlineGoogle></AiOutlineGoogle></button> */}
+                                <button onClick={handleGoogle} className='border p-5 rounded-2xl text-2xl' ><AiOutlineGoogle></AiOutlineGoogle></button> 
                                 <a onClick={""} className='border p-5 rounded-2xl text-2xl' ><AiFillGithub></AiFillGithub></a>
                             </div>
                         </div>

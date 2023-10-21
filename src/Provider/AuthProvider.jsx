@@ -26,7 +26,7 @@ const AuthProvider = ({ children }) => {
             unSubscrive()
         }
     }, [])
-    const logout = () => {
+    const logOut = () => {
         return signOut(auth, currentUser => {
             setUser(currentUser)
         })
@@ -39,7 +39,7 @@ const AuthProvider = ({ children }) => {
         createUser,
         singInUser,
         googleUser,
-        logout,
+        logOut,
         loading
     }
     return (

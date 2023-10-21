@@ -1,16 +1,30 @@
-import { useState } from "react";
+import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../Provider/AuthProvider";
 
 
 const Navbar = () => {
-    const { user } = useState(AuthContext)
+    const { user, logOut } = useContext(AuthContext)
+    // console.log(user)
     const links = <>
         <li> <NavLink className="mr-5" to={'/'}>Home</NavLink></li>
         <li> <NavLink className="mr-5" to={'/addProduct'}>Add Product</NavLink></li>
         <li><NavLink className="mr-5" to={'/myCart'}>My Cart</NavLink></li>
-    </>
 
+        {
+            user ?
+                <>
+                    <li><NavLink to={'/about'}>About</NavLink></li>
+                    <li><NavLink to={'/features'}>Features</NavLink></li>
+                </> : ""
+        }
+    </>
+    const handleSingOut = () => {
+        logOut()
+            .then()
+            .catch()
+
+    }
     return (
         <div className="navbar bg-base-100 max-w-7xl mx-auto p-5">
             <div className="navbar-start">
@@ -24,8 +38,8 @@ const Navbar = () => {
                         {links}
                     </ul>
                 </div>
-                <img className="w-12 h-12 rounded-full" src="https://i.postimg.cc/MGN0F8LB/istockphoto-1144557228-1024x1024.jpg" alt="" />
-                <a className="btn btn-ghost normal-case text-xl">Technology</a>
+                <img className="w-10 h-10 rounded-full" src="https://i.postimg.cc/wxrhP7ry/istockphoto-1452604857-1024x1024.jpg" alt="" />
+                <a className="btn btn-ghost normal-case text-xl text-sky-500">Technology</a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1 ">
@@ -33,11 +47,14 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end ">
-                <Link className="btn" to={'/login'}>Login</Link>
+
                 {
-                     user ? <>
-                     <p>{user.email}</p>
-                 </> : ""
+                    user ? <>
+                        <p>{user.displayName}</p>
+                        <p className="ml-3">{user.photoURL}</p>
+                        <p>{user.email}</p>
+                        <a onClick={handleSingOut} className="btn">SingOUt</a>
+                    </> : <Link className="btn" to={'/login'}>Login</Link>
                 }
             </div>
 
@@ -49,7 +66,7 @@ const Navbar = () => {
                 //     <a onClick={handleSingIn} className="btn">SingOUt</a>
                 // </>
                 //     : ""
-               
+
             }
         </div>
     );

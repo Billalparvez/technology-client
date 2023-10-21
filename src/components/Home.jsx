@@ -1,9 +1,11 @@
+
 import Bannar from "./Bannar";
 import Category from "./Category";
 import Footer from "./Footer";
 
 
 const Home = () => {
+
     return (
         <div>
             <Bannar></Bannar>

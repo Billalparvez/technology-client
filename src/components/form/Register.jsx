@@ -5,11 +5,12 @@ import { Link } from "react-router-dom";
 import { AiOutlineGoogle, AiFillGithub } from 'react-icons/ai';
 import { useContext, useState } from 'react';
 import { AuthContext } from '../../Provider/AuthProvider';
+import Swal from 'sweetalert2';
 
 
 
 const Register = () => {
-    const {createUser}=useContext(AuthContext)
+    const { createUser,googleUser } = useContext(AuthContext)
     const [success, setSuccess] = useState("")
     const [regError, setRegError] = useState("")
     const [passwordShow, setPasswordShow] = useState(false)
@@ -33,12 +34,18 @@ const Register = () => {
             toast.error("password must be special charecter")
             return
         }
-        
+
         createUser(email, password)
             .then(res => {
                 console.log(res)
                 setSuccess(res)
-                toast.success("Your Register is Successfull!!!")
+                // toast.success("Your Register is Successfull!!!")
+                Swal.fire({
+                    title: 'success!',
+                    text: 'Your Login Success!!!',
+                    icon: 'success',
+                    confirmButtonText: 'Cool'
+                })
                 return
 
             })
@@ -49,12 +56,12 @@ const Register = () => {
                 setRegError(errorMessage)
             })
     }
-    // const handleGoogle = () => {
-    //     googleUser()
-    //         .then()
-    //         .catch()
-    //     console.log("google")
-    // }
+    const handleGoogle = () => {
+        googleUser()
+            .then()
+            .catch()
+        console.log("google")
+    }
     return (
         <div>
             <div className="hero min-h-screen bg-base-200" style={{ backgroundImage: 'url(https://i.postimg.cc/xCQRqDk8/80-cm-Vtb3-Rl-X3dvcmtpbmct-MDg.jpg)' }}>
@@ -98,7 +105,7 @@ const Register = () => {
                         <div className='text-center'>
                             <p className='font-bold'>or Sing Up with</p>
                             <div className='flex justify-center mt-3 gap-4'>
-                                <button onClick={""} className='border p-5 rounded-2xl text-2xl' ><AiOutlineGoogle></AiOutlineGoogle></button>
+                                <button onClick={handleGoogle} className='border p-5 rounded-2xl text-2xl' ><AiOutlineGoogle></AiOutlineGoogle></button>
                                 <a onClick={""} className='border p-5 rounded-2xl text-2xl' ><AiFillGithub></AiFillGithub></a>
                             </div>
                         </div>
