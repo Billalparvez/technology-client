@@ -39,27 +39,27 @@ export const router = createBrowserRouter([
       {
         path: "/cards/:brand",
         element: <Cards></Cards>,
-        loader: ({params}) => fetch(`https://technology-server-13fzq322d-billals-projects.vercel.app/technology/brand/${params.brand}`),
+        loader: ({params}) => fetch(`https://technology-server-seven.vercel.app/technology/brand/${params.brand}`),
       },
       {
         path: "/editProduct/:id",
         element: <EditProduct></EditProduct>,
-        loader: ({ params }) => fetch(`https://technology-server-13fzq322d-billals-projects.vercel.app/technology/${params.id}`)
+        loader: ({ params }) => fetch(`https://technology-server-seven.vercel.app/technology/${params.id}`)
       },
       {
         path: "/cardDetails/:id",
         element: <PrivateRouter><CardDetails></CardDetails></PrivateRouter>,
-        loader: ({ params }) => fetch(`https://technology-server-13fzq322d-billals-projects.vercel.app/technology/${params.id}`)
+        loader: ({ params }) => fetch(`https://technology-server-seven.vercel.app/technology/${params.id}`)
       },
       {
         path: "/myCart",
         element: <PrivateRouter><MyCart></MyCart></PrivateRouter>,
-        loader:()=>fetch('https://technology-server-13fzq322d-billals-projects.vercel.app/brand')
+        loader:()=>fetch('https://technology-server-seven.vercel.app/brand')
       },
       {
         path: "/brand",
         element: <Brand></Brand>,
-          // loader:()=>fetch('https://technology-server-13fzq322d-billals-projects.vercel.app/brand')
+          // loader:()=>fetch('https://technology-server-seven.vercel.app/brand')
       }
 
     ]

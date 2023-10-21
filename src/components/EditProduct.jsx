@@ -16,7 +16,7 @@ const EditProduct = () => {
         const photo_url = form.photo_url.value;
         const AddProduct = { name, brand, price, category, description, rating, photo_url }
         console.log(AddProduct)
-        fetch(`https://technology-server-13fzq322d-billals-projects.vercel.app/technology/${data._id}`, {
+        fetch(`https://technology-server-seven.vercel.app/technology/${data._id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

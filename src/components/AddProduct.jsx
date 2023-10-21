@@ -15,7 +15,7 @@ const AddProduct = () => {
         const photo_url = form.photo_url.value;
         const AddProduct = { name, brand, price, category, description, rating, photo_url }
         console.log(AddProduct)
-        fetch("https://technology-server-13fzq322d-billals-projects.vercel.app/technology", {
+        fetch("https://technology-server-seven.vercel.app/technology", {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -50,7 +50,7 @@ const AddProduct = () => {
                     <div className="form-control w-full">
                         <label className="input-group input-group-vertical">
                             <span className="bg-pink-400 text-white font-bold">Brand Name</span>
-                            <select className="select select-bordered " name="category">
+                            <select className="select select-bordered " name="brand">
                                 <option disabled selected>Brand category</option>
                                 <option>Apply</option>
                                 <option>Oppo</option>

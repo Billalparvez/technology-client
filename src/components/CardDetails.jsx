@@ -13,7 +13,7 @@ const CardDetails = () => {
         const purchasedBy = data?.email
         const brand = { brandName, brandPhoto, purchasedBy }
         console.log(brand)
-        fetch('https://technology-server-13fzq322d-billals-projects.vercel.app/brand', {
+        fetch('https://technology-server-gvfm149cn-billals-projects.vercel.app/brand', {
             method: "POST",
             headers: {
                 "content-type": "application/json"
@@ -44,7 +44,7 @@ const CardDetails = () => {
                         <p className="text-2xl">{data.rating}</p>
                     </div>
                     <div className="card-actions justify-end">
-                        <button onClick={() => handleAddCart(data)} className="btn bg-sky-500">Add to Cart</button>
+                        <button onClick={() => handleAddCart(data)} className="btn bg-sky-500 text-white">Add to Cart</button>
 
                     </div>
                 </div>
