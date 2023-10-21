@@ -17,14 +17,14 @@ const Cards = () => {
                     </div>
                 </div>
                 <div id="slide2" className="carousel-item relative w-full">
-                    <img src="https://i.postimg.cc/sxsfbG2t/google-plus-icon-line-connection-circuit-board.jpg" className="w-full h-[550px] rounded" />
+                    <img src="https://i.postimg.cc/kXqJdGjx/new-smartphone-balancing-with-cloth.jpg" className="w-full h-[550px] rounded" />
                     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide1" className="btn btn-circle">❮</a>
                         <a href="#slide3" className="btn btn-circle">❯</a>
                     </div>
                 </div>
                 <div id="slide3" className="carousel-item relative w-full">
-                    <img src="https://i.postimg.cc/sxsfbG2t/google-plus-icon-line-connection-circuit-board.jpg" className="w-full h-[550px] rounded" />
+                    <img src="https://i.postimg.cc/sDrYdPdw/elegant-smartphone-composition-1.jpg" className="w-full h-[550px] rounded" />
                     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide2" className="btn btn-circle">❮</a>
                         <a href="#slide4" className="btn btn-circle">❯</a>

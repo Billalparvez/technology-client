@@ -55,8 +55,9 @@ const AddProduct = () => {
                                 <option>Apply</option>
                                 <option>Oppo</option>
                                 <option>Sony</option>
-                                <option>Samsunge</option>
+                                <option>Xiaomi</option>
                                 <option>Oneplus</option>
+                                <option>Google</option>
                             </select>
                         </label>
                     </div>
@@ -70,7 +71,7 @@ const AddProduct = () => {
                         </label>
                     </div>
                     <div className="form-control w-full">
-                        <label className="input-group input-group-vertical">
+                        {/* <label className="input-group input-group-vertical">
                             <span className="bg-pink-400 text-white font-bold">category Name</span>
                             <select className="select select-bordered " name="category">
                                 <option disabled selected>Pick category</option>
@@ -80,6 +81,10 @@ const AddProduct = () => {
                                 <option>Samsunge</option>
                                 <option>Oneplus</option>
                             </select>
+                        </label> */}
+                        <label className="input-group input-group-vertical">
+                            <span className="bg-pink-400 text-white font-bold">Category</span>
+                            <input type="text" placeholder="category" name="category" className="input input-bordered" />
                         </label>
                     </div>
                 </div>

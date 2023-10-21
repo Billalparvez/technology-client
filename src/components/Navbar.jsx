@@ -50,7 +50,7 @@ const Navbar = () => {
 
                 {
                     user ? <>
-                        <p>{user.displayName}</p>
+                        {/* <p>{user.displayName}</p> */}
                         <p className="ml-3">{user.photoURL}</p>
                         <p>{user.email}</p>
                         <a onClick={handleSingOut} className="btn">SingOUt</a>
