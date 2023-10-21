@@ -15,7 +15,7 @@ const AddProduct = () => {
         const photo_url = form.photo_url.value;
         const AddProduct = { name, brand, price, category, description, rating, photo_url }
         console.log(AddProduct)
-        fetch("http://localhost:5000/technology", {
+        fetch("https://technology-server-13fzq322d-billals-projects.vercel.app/technology", {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

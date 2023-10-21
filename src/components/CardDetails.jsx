@@ -12,7 +12,7 @@ const CardDetails = () => {
         const purchasedBy = data?.email
         const brand = { brandName, brandPhoto, purchasedBy }
         console.log(brand)
-        fetch('http://localhost:5000/brand', {
+        fetch('https://technology-server-13fzq322d-billals-projects.vercel.app/brand', {
             method: "POST",
             headers: {
                 "content-type": "application/json"

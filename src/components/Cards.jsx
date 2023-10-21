@@ -45,7 +45,7 @@ const Cards = () => {
                 <h1 className="font-bold text-3xl mb-3">Lorem ipsum dolor sit amet.</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur unde repellat sunt illum ea, optio corporis et saepe tempore ex!</p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 my-20">
+            <div className="grid grid-cols-1 md:grid-cols-2  gap-5 my-20">
                 {
                     products.map((product,idx) =>
                         <Card key={idx}

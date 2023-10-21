@@ -1,6 +1,7 @@
 
 import Bannar from "./Bannar";
 import Category from "./Category";
+import ExtraSection from "./ExtraSection";
 import Footer from "./Footer";
 
 
@@ -10,6 +11,7 @@ const Home = () => {
         <div>
             <Bannar></Bannar>
             <Category></Category>
+            <ExtraSection></ExtraSection>
             <Footer></Footer>
         </div>
     );
